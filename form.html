@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project01</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/8b7ad911c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-yellow shadow py-0 py-lg-2"
+    >
+      <a class="navbar-brand text-center mt-2" href="./index.html"
+        ><img src="./Design/Logo.png" /><span
+          class="text-uppercase font-weight-bold fs-12"
+          >Brainster</span
+        ></a
+      >
+
+      <div class="openMenu">
+        <img class="d-block d-lg-none" src="./Design/bars.png" />
+      </div>
+
+      <ul class="navbar-nav mx-auto text-lg-center stroke mainMenu">
+        <li class="nav-item ml-3 ml-lg-0">
+          <a
+            class="font-weight-bold mr-0 mr-lg-5 p-0 pb-2"
+            href="https://brainster.co/marketing/"
+            target="_blank"
+            >Академија за маркетинг</a
+          >
+        </li>
+        <li class="nav-item ml-3 ml-lg-0">
+          <a
+            class="font-weight-bold mr-0 mr-lg-5 p-0 pb-2"
+            href="https://brainster.co/full-stack/"
+            target="_blank"
+            >Академија за програмирање</a
+          >
+        </li>
+        <li class="nav-item ml-3 ml-lg-0">
+          <a
+            class="font-weight-bold mr-0 mr-lg-5 p-0 pb-2"
+            href="https://brainster.co/data-science/"
+            target="_blank"
+            >Академија за data science</a
+          >
+        </li>
+        <li class="nav-item ml-3 ml-lg-0">
+          <a
+            class="font-weight-bold mr-0 mr-lg-5 p-0 pb-2"
+            href="https://brainster.co/graphic-design/"
+            target="_blank"
+            >Академија за дизајн</a
+          >
+        </li>
+
+        <a
+          href="./form.html"
+          class="btn btn-lightred text-white font-weight-bold ml-3"
+          role="button"
+          aria-pressed="true"
+          >Вработи наш студент</a
+        >
+
+        <div class="closeMenu text-white">
+          <i class="fa fa-times fa-2xl"></i>
+        </div>
+      </ul>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- FORM-SECTION -->
+    <div class="bg-yellow pb-10">
+      <div class="container bg-yellow">
+        <h1 class="text-dark font-weight-bolder text-center">
+          Вработи студенти
+        </h1>
+        <form class="form" id="form">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <div class="input-control">
+                <label class="h5 font-weight-bold">Име и презиме</label>
+                <input
+                  class="form-control font-italic text-muted py-4"
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Вашето име и презиме"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="input-control">
+                <label class="h5 font-weight-bold">Име на компанија</label>
+                <input
+                  class="form-control font-italic text-muted py-4"
+                  id="username2"
+                  name="username"
+                  type="text"
+                  placeholder="Име на вашата компанија"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <div class="input-control">
+                <label class="h5 font-weight-bold">Контакт имејл</label>
+                <input
+                  class="form-control font-italic text-muted py-4"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Контакт имејл на вашата компанија"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="input-control">
+                <label class="h5 font-weight-bold">Контакт телефон</label>
+                <input
+                  class="form-control font-italic text-muted py-4"
+                  id="number"
+                  name="phoneNumber"
+                  type="tel"
+                  placeholder="Контакт телефон на вашата компанија"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <div class="input-control">
+                <label class="h5 font-weight-bold">Тип на студент</label>
+                <select
+                  class="form-control form-control-lg font-weight-bold text-dark"
+                  id="select"
+                >
+                  <option
+                    value="student"
+                    class="font-weight-bold text-dark"
+                    selected
+                  >
+                    Изберете тип на студент
+                  </option>
+                  <option
+                    class="font-weight-bold text-dark border"
+                    value="marketing"
+                  >
+                    Маркетинг
+                  </option>
+                  <option
+                    class="font-weight-bold text-dark"
+                    value="programming"
+                  >
+                    Програмирање
+                  </option>
+                  <option class="font-weight-bold text-dark" value="data">
+                    Data science
+                  </option>
+                  <option class="font-weight-bold text-dark" value="design">
+                    Дизајн
+                  </option>
+                </select>
+                <small id="selectError">Error message</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <button
+                type="submit"
+                class="btn btn-lightred btn-lg btn-block text-white text-uppercase mt-6 p-2"
+              >
+                <span class="h6"> Испрати</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FORM-SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="bg-dark text-center py-3">
+        <small class="text-white"
+          >Изработено со &#10084;&#65039; од студентите на Brainster</small
+        >
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- JavaScript -->
+    <script src="./JavaScript/nav.js"></script>
+    <script src="./JavaScript/form.js"></script>
+
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
